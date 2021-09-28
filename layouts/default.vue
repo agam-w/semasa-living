@@ -45,6 +45,7 @@
         tile
         class="lighten-1 white--text text-center"
         style="background-color: #27cfb1 !important"
+        width="100%"
       >
         <v-card-text>
           <v-btn
