@@ -3,7 +3,7 @@
     <h1 class="mb-14">Products</h1>
     <v-row>
       <v-col
-        v-for="n in images"
+        v-for="n in imagesShow"
         :key="n.price"
         class="d-flex child-flex"
         cols="6"
@@ -27,7 +27,14 @@
         </v-img>
       </v-col>
     </v-row>
-    <h3 class="text-center pt-6" style="color: #27cfb1">Show More</h3>
+    <h3
+      v-if="imagesShow.length < 71"
+      class="text-center pt-6"
+      style="color: #27cfb1; cursor: pointer"
+      @click="showMore"
+    >
+      Show More
+    </h3>
   </v-container>
 </template>
 
@@ -415,7 +422,8 @@ export default {
       } else {
         num = 2
       }
-      return num * this.imagesRow
+      const size = num * this.imagesRow
+      return this.images.slice(0, size)
     },
   },
   watch: {
@@ -425,6 +433,11 @@ export default {
   },
   mounted() {
     console.log(this.imagesShow, 'mounted')
+  },
+  methods: {
+    showMore() {
+      this.imagesRow += 4
+    },
   },
 }
 </script>
