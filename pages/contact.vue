@@ -7,7 +7,7 @@
         <p><b>Phone/Whatsapp: </b>+62 333 222 111 38</p>
         <p>
           <b>Email: </b
-          ><a href="mailto:semasaliving@gmail.com">semasaliving@gmail.com</a>
+          ><a href="mailto:semasaliving@gmail.com">admin@semasaliving.com</a>
         </p>
         <p><b>Opening hours: </b>Monday – Sunday, 09 AM – 5 PM</p>
       </v-col>
